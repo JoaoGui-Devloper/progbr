@@ -1,0 +1,23 @@
+div {
+    width: 200px;
+    height: 160px;
+    background-color: aquamarine;
+}
+
+p {
+    text-align: justify;
+    width: 450px;
+    margin: 15px auto;
+}
+
+img {
+    width: 200px;
+}
+
+img:hover {
+    cursor: wait;
+}
+
+#tal {
+margin: auto;
+}
