@@ -1,0 +1,16 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.bar {
+    background-color: #ff6b28;
+    padding: 10px;
+    text-align: center;
+}
+
+#img-bolo {
+    height: 370px;
+    background: transparent url(images/hero_bolo.jpg) right top no-repeat;
+    background-size: cover;
+}
