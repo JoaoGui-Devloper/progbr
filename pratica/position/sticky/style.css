@@ -1,0 +1,22 @@
+#quadrado {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.mini-quadrado {
+    width: 100px;
+    height: 100px;
+}
+
+#quadrado-red {
+    background-color: red;
+}
+
+#quadrado-green {
+    background-color: green;
+}
+
+#quadrado-blue {
+    background-color: blue;
+}
