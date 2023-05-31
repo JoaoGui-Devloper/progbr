@@ -1,0 +1,18 @@
+button {
+    float: right;
+    margin: 5px;
+    margin-bottom: 30px;
+}
+
+div {
+    clear: right;
+}
+
+img{
+    float: left;
+    margin: 10px;
+}
+
+p {
+    text-align: justify;
+}
