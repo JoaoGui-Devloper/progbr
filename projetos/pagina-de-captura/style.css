@@ -28,6 +28,55 @@ h1, h2 {
     font-size: 26px;
 }
 
+.div-background {
+    background: black url(images/people.jpg) left center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.form-box {
+    width: 210px;
+    background-color: rgba(255, 255, 255, 0.702);
+    padding: 15px;
+    float: right;
+}
+
+h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-box > p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: transparent;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+}
+
+input[type="submit"] {
+    background-color: #25c4e3;
+    color: white;
+    position: relative;
+    font-weight: bold;
+}
+
+select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background: white url(images/arrow.jpg) no-repeat;
+    background-position: calc(100% - 10px) center;
+}
+
 #img-palestrant {
     width: 100px;
 }
