@@ -99,12 +99,14 @@ select {
 
 h3 {
     margin: 20px;
+    text-align: center;
 }
 
 .p-palestrant {
     width: 480px;
     font-size: 0.9em;
     margin: 10px;
+    text-align: justify;
 }
 
 footer {
