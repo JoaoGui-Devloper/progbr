@@ -11,3 +11,6 @@ window.onload = function() {
         console.log(t.children[1])
     }
 }
+
+//children seleciona o filho
+//parentElement seleciona o pai
