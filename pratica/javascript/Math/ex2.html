@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de sorteio de nomes</title>
+</head>
+<body>
+
+    <h1 id="resultado"></h1>
+    <input type="submit" value="Sortear" onclick="sortear()">
+    
+
+    <script>
+        let nomes = ["João", "Natália", "Maria", "Igor", "Erika", "Daniel"]
+
+        function sortear() {
+            let sorteio = Math.floor(Math.random() * nomes.length)
+            document.getElementById('resultado').innerHTML = nomes[sorteio]
+        }
+    </script>
+
+</body>
+</html>
