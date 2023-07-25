@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout</title>
+</head>
+<body>
+
+    <h1>Titulo</h1>
+    <input onclick="clicar()" type="submit" value="Timer">
+
+    <script>
+
+        function mudarCor() {
+            document.getElementsByTagName("h1")[0].style.color = "blue"
+        }
+
+        function clicar() {
+            document.getElementsByTagName("h1")[0].innerHTML = 'Novo Titulo'
+
+            setTimeout(mudarCor, 1000)
+        }
+    </script>
+    
+</body>
+</html>

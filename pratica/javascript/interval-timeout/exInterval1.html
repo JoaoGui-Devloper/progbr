@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval</title>
+</head>
+<body>
+
+    <h1></h1>
+    <input onclick="iniciar()" type="submit" value="Iniciar">
+    <input onclick="parar()" type="submit" value="Parar">
+
+    <script>
+        var numero = 0;
+        var interval;
+        
+        function iniciar() {
+            interval = setInterval(atualizarTexto,1000)
+        }
+
+        function parar() {
+            clearInterval(interval)
+        }
+
+        function atualizarTexto() {
+            let tal = document.getElementsByTagName('h1')[0];
+            tal.innerHTML += " " + numero;
+            numero++;
+        }
+    </script>
+    
+</body>
+</html>
