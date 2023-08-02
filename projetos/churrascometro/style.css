@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#conteiner {
+    padding: 20px;
+    margin: 25px auto;
+    text-align: center;
+    width: 400px;
+    background-color: rgb(212, 254, 254);
+    border-radius: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #8b80f9;
+}
+
+input[type = "number"] {
+    display: block;
+    margin: 10px auto;
+    width: 95%;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1.5px solid #6456fa;
+}
+
+input[type = "number"]::placeholder {
+    font-weight: bold;
+    text-indent: 5px;
+    color: #8b80f9;
+}
+
+#calc {
+    margin: 10px;
+    color: #8b80f9;
+    background-color: white;
+    border: 1px solid #6456fa;
+    font-weight: bold;
+    padding: 7px;
+    width: 20%;
+    cursor: pointer;
+    box-shadow: #8b80f9 3px 3px 0;
+    transition: all .195s ease-in-out;
+}
+
+#calc:hover {
+    transform: translateX(5px) translateY(5px);
+    box-shadow: #8b80f9 7px 8px 0;
+}
