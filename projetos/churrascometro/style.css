@@ -24,6 +24,7 @@ input[type = "number"] {
     padding: 7px;
     box-sizing: border-box;
     border: 1.5px solid #6456fa;
+    box-sizing: border-box;
 }
 
 input[type = "number"]::placeholder {
@@ -48,4 +49,14 @@ input[type = "number"]::placeholder {
 #calc:hover {
     transform: translateX(5px) translateY(5px);
     box-shadow: #8b80f9 7px 8px 0;
+}
+
+#resultado {
+    margin: 20px auto;
+    padding: 7px;
+    background-color: white;
+    width: 95%;
+    box-sizing: border-box;
+    line-height: 30px;
+    display: none;
 }
