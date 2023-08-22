@@ -6,13 +6,123 @@
     <title>Tag video</title>
     <style>
 
+        #conteiner{
+            width: 640px;
+            height: 360px;
+            position: relative;
+        }
 
+        video{
+            width: 100%;
+        }
+
+        #controles{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        .botao{
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: inline-block;
+            position: relative;
+            top: 82%;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #menu-velocidade{
+            position: absolute;
+            right: 0;
+        }
+
+        #velocidades{
+            position: absolute;
+            right: 1%;
+            top: 1%;
+            width: 180px;
+            height: 80%;
+            overflow-x: hidden;
+            color: white;
+            background-color: rgb(64, 64, 64);
+            font-size: 17px;
+            border-radius: 5%;
+            display: none;
+        }
+
+        #velocidades::-webkit-scrollbar{
+            display: none;
+        }
+
+        #titulo{
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .opcoes{
+            padding: 15px;
+            margin: 0;
+        }
+
+        .opcoes:hover{
+            background-color: rgb(160, 160, 160);
+        }
 
     </style>
 </head>
 <body>
 
-    <video id="tal" src="assents/video/limoes.mp4" width="400px"></video>
+    <div id="conteiner">
+
+        <video src="assents/video/limoes.mp4" id="video1" loop></video>
+
+        <div id="controles">
+            
+            <div class="botao" id="play">
+                <img src="assents/icones/toque.png" alt="play" id="imgPause">
+            </div>
+
+            <div class="botao" id="pause">
+                <img src="assents/icones/pausa.png" alt="pause">
+            </div>
+
+            <div class="botao">
+                <img src="assents/icones/retroceder.png" alt="retroceder">
+            </div>
+
+            <div class="botao">
+                <img src="assents/icones/avancar.png" alt="avançar">
+            </div>
+
+            <div class="botao" id="menu-velocidade">
+                <img src="assents/icones/tempo-de-entrega.png" alt="menu">
+            </div>
+
+            <div id="velocidades">
+                <p id="titulo">Velocidades</p>
+                <p class="opcoes">0.50x</p>
+                <p class="opcoes">0.75x</p>
+                <p class="opcoes">1.0x - Normal</p>
+                <p class="opcoes">1.25x</p>
+                <p class="opcoes">1.50x</p>
+                <p class="opcoes">2.0x</p>
+            </div>
+        </div>
+    </div>
     
+    <script src="script.js"></script>
+
 </body>
 </html>
