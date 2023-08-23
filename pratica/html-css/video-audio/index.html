@@ -74,6 +74,7 @@
         .opcoes{
             padding: 15px;
             margin: 0;
+            user-select: none;
         }
 
         .opcoes:hover{
@@ -98,26 +99,24 @@
                 <img src="assents/icones/pausa.png" alt="pause">
             </div>
 
-            <div class="botao">
+            <div class="botao" id="retroceder">
                 <img src="assents/icones/retroceder.png" alt="retroceder">
             </div>
 
-            <div class="botao">
+            <div class="botao" id="avancar">
                 <img src="assents/icones/avancar.png" alt="avançar">
             </div>
 
-            <div class="botao" id="menu-velocidade">
+            <div class="botao" id="menu-velocidade" onclick="menuVel()">
                 <img src="assents/icones/tempo-de-entrega.png" alt="menu">
             </div>
 
             <div id="velocidades">
                 <p id="titulo">Velocidades</p>
-                <p class="opcoes">0.50x</p>
-                <p class="opcoes">0.75x</p>
-                <p class="opcoes">1.0x - Normal</p>
-                <p class="opcoes">1.25x</p>
-                <p class="opcoes">1.50x</p>
-                <p class="opcoes">2.0x</p>
+                <p class="opcoes" id="vel0.5">0.50x</p>
+                <p class="opcoes" id="vel1.0">1.0x - Normal</p>
+                <p class="opcoes" id="vel1.5">1.50x</p>
+                <p class="opcoes" id="vel2.0">2.0x</p>
             </div>
         </div>
     </div>
