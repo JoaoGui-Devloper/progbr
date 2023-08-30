@@ -1,0 +1,31 @@
+#conteiner{
+    height: 600px;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+
+    flex-wrap: nowrap;
+    /* wrap vai proteger as dimensões definidas, trocando o elemento de linha ou coluna se seu tamanho ultrapassar as dimensões do pai, no nowrap (que é o padrão), vai alterar as dimensões para se encaixar no espaço*/
+}
+
+.rect{
+    width: 200px;
+    height: 200px;
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
