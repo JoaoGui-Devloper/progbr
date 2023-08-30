@@ -1,0 +1,33 @@
+#conteiner{
+    height: 600px;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: baseline;
+    align-items: baseline;
+    /* justify-content e aling-items tem vários valores para alterar a posição dos elementos filhos*/
+
+    align-content: center;
+    /* Enquanto o aling-items alinha o item (elementos filhos) em relação a cada linha, o align-content vai alinhar as linhas em relação ao conteiner (elemento pai)*/
+}
+
+.rect{
+    width: 200px;
+    height: 150px;
+}
+
+.r1{
+    background-color: red;
+}
+
+.r2{
+    background-color: blue;
+}
+
+.r3{
+    background-color: green;
+}
