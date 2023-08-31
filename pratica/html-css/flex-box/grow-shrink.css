@@ -1,0 +1,38 @@
+#conteiner{
+    height: 600px;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+}
+
+.rect{
+    width: 250px;
+    height: 200px;
+    flex-shrink: 1;
+    /* flex-shrink é uma propriedade que pode receber 0 ou 1
+        0 sendo que o objeto não pode encolher
+        E 1 (padrão) que o objeto pode encolher */
+    flex-grow: 0;
+    /* flex-grow é uma propriedade que também recebe 0 ou 1
+        1 sendo libera o objeto a aumentar para ocupar o espaço que sobra dentro do pai.
+        E 0 (padrão) não permite o objeto aumentar. */
+}
+
+.r1{
+    background-color: red;
+    order: 0;
+    /* order é uma propriedade para ordenar os objetos, por padrão todos são 0, é possivel colocar números negativos como -1 que vira antes do 0 (padrão), order só funcionara nos objetos se o display: flex; for definido no objeto pai */
+}
+
+.r2{
+    background-color: blue;
+    order: 0;
+    align-self: center;
+    /* Funciona como o align-items, mas direto no objeto filho, usado para movimentar apenas um objeto pelo elemento pai.*/
+}
+
+.r3{
+    background-color: green;
+    order: 0;
+}
