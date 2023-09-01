@@ -1,0 +1,31 @@
+#conteiner{
+    height: 500px;
+    display: grid;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+
+    grid-template: auto auto / auto auto auto;
+
+    gap: 10px;
+
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.r1{
+ background-color: red;
+}
+
+.r2{
+ background-color: green;
+}
+
+.r3{
+ background-color: blue;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+}
