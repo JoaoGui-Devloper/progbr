@@ -10,7 +10,9 @@
     gap: 10px;
 
     justify-content: space-between;
-    align-content: space-around;
+    align-content: center;
+
+    /* justify-content e align-content altera a colunas e as linhas do grid para que elas sejam do tamnho exato do elemento filho e com varios valores poder alterar a posição desses elementos no grid*/
 }
 
 .r1{

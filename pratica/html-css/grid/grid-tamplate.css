@@ -5,15 +5,21 @@
     background-color: gray;
     padding: 10px;
 
-/*  grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto auto; */
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto;
 
-    grid-template: auto auto / auto auto auto;
+    grid-template: auto auto/ 1fr 1fr 1fr;
 
-    gap: 10px;
+    /* Dita como vai ser a disposição de linhas e colunas na grid. Pode ser simplificada com grid-template apenas, colocando primeiro as linhas (rows), depois colunas (columns). */
+
+    gap: 10px 50px;
+
+    /* O gap dita o espaço entre os elementos da grid. */
 
     justify-items: center;
     align-items: center;
+
+    /* Justify-items e align-items tem varios valores para alterar a posição dos elementos filhos na grid*/
 }
 
 .r1{
