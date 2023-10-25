@@ -6,12 +6,36 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 ;}
 
-.square{
+.square {
     width: 100px;
     height: 100px;
     background-color: beige;
     border: 1px solid black;
     display: inline-block;
+}
+
+.O {
+    display: flex;
+    justify-content: center;
+}
+
+.O::after {
+    content: "O";
+    position: absolute;
+    line-height: 100px;
+    font-size: 50px;
+}
+
+.X {
+    display: flex;
+    justify-content: center;
+}
+
+.X::after {
+    content: "X";
+    position: absolute;
+    line-height: 100px;
+    font-size: 50px;
 }
 
 input {
@@ -20,4 +44,5 @@ input {
     border-radius: 10px;
     font-weight: bold;
     font-size: 15px;
+    background-color: beige;
 }
