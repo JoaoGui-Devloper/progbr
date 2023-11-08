@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+let button = document.getElementById('botao');
+button.addEventListener('click', endGame);
+
+function endGame() {
+    resetGame();
+    updateSquares();
+}
+
 function handleClick (event) {
 
     let square = (event.target);
@@ -15,13 +23,16 @@ function handleClick (event) {
 
     if (handleMove(position)) {
         setTimeout ( () => {
-            alert(`O jogador ${symbols[playerTime]} foi o vencedor`)}
-            , 50 );
+            alert(`O jogador ${symbols[playerTime]} foi o vencedor`)
+            resetGame();
+            updateSquares();
+        }, 50 );
+
     };
-    uptadeSquares();
+    updateSquares();
 };
 
-function uptadeSquares() {
+function updateSquares() {
 
     let squares = document.querySelectorAll('.square');
 
@@ -30,10 +41,8 @@ function uptadeSquares() {
         let position = square.id;
         let sybols = board[position];
 
-        if (sybols != '') {
-            square.innerHTML = `<div class="${sybols}"></div>`
-        }
+        square.innerHTML = `<div class="${sybols}"></div>`
 
     });
 
-} 
+};

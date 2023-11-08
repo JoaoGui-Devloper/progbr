@@ -1,7 +1,8 @@
 let board = ["", "", "", "", "", "", "", "", ""];
 let playerTime = 0;
-let symbols = ['O', 'X'];
 let gameOver = false;
+
+let symbols = ['O', 'X'];
 
 function handleMove (position) {
 
@@ -55,4 +56,10 @@ function isWin() {
     };
 
     return false;
+};
+
+function resetGame() {
+    board = ["", "", "", "", "", "", "", "", ""];
+    playerTime = 0;
+    gameOver = false;
 };
