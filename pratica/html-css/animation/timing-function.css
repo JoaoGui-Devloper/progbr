@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes move {
+    0% {left: 0%;}
+    100% {left: 80%;}
+}
+
+.pai{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.box{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    margin: 30px;
+    
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+.div1{
+    animation-timing-function: linear;
+}
+
+.div2{
+    animation-timing-function: ease;
+}
+
+.div3{
+    animation-timing-function: ease-in;
+}
+
+.div4{
+    animation-timing-function: ease-in-out;
+}
+
+.div5{
+    animation-timing-function: ease-out;
+}

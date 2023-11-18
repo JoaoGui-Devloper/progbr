@@ -3,11 +3,34 @@
     height: 200px;
     border: 2px solid black;
     animation-name: changeColor;
+    /* O nome da animação que vai ser chamada. */
+
     animation-duration: 3s;
+    /* Duração da animação. Quantos segundos ela vai durar no total. */
+
     animation-delay: 2s;
-    animation-iteration-count: 2;
+    /* Delay para começar a animação. Também é póssivel dar um número negativo, como -3, a animação vai
+        vai começar imediatamente ao carregar a página mas vai começar como se já tivessem passados
+        3 segundos da animação por causa do delay -3. */
+
+    animation-iteration-count: 1;
+    /* Funciona para criar um loop ou para dar um número expecífico a quatidade de vezes a animação
+        vai ter. */
+
     animation-direction: alternate;
+    /* Com a propriedade reverse, ele começa a animação pelo final e termina pelo começo.
+        Com a propriedade alternate, ele vai ficar alterando entre o começo e o fim da animação desde
+        que tenha um animation-iteration-count maior que 1, ou seja, se a animação se repetir pelo menos
+        uma vez. */
+
     animation-fill-mode: both;
+    /* Serve para que fique parado no primeiro frame da animação antes de começar, "backwards", e no último 
+        frame da animação depois que ela acabar,"forwards", em vez de ficar apenas um quadrado branco.
+        "both" é para se quiser ambos os efeitos.*/
+
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* Shorthand do animation. */
 }
 
 @keyframes changeColor {
