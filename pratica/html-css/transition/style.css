@@ -1,0 +1,25 @@
+.bnt {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    background-color: gray;
+    color: white;
+
+    /* Maioria  dos elementos são iguais aos das animations*/
+
+    transition-property: background-color, padding;
+    transition-duration: 400ms;
+    transition-delay: 100ms;
+    transition-timing-function: linear;
+
+    /* transition: transition-property transition-duration transition-delay transition-timing-function; 
+    
+    Shorthand do transition
+    */
+}
+
+.bnt:hover {
+    background-color: blueviolet;
+    padding-left: 20px;
+    padding-right: 20px;
+}
