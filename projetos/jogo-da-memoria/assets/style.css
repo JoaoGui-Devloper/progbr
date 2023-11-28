@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Righteous', sans-serif;
+}
+
+.card {
+    width: 150px;
+    height: 150px;
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card_front, .card_back {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.445);
+    backface-visibility: hidden;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.card_front {
+    background-color: #101c2c;
+    transform: rotateY(180deg);
+}
+
+.card_back {
+    background-image: linear-gradient(230deg, #05c3ff, #026bcc);
+    color: #101c2c;
+    font-size: 40px;
+}
+
+.gameOver {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.restart {
+    padding: 25px;
+    margin-top: 20px;
+    background-color: #05c3ff;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    font-size: 20px;
+}
