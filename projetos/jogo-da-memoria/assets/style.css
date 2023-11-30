@@ -6,11 +6,21 @@
 
 body {
     font-family: 'Righteous', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#gameboard {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    gap: 20px;
 }
 
 .card {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     position: relative;
 
     transform-style: preserve-3d;
@@ -52,7 +62,7 @@ body {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     font-size: 50px;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
