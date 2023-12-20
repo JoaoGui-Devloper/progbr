@@ -12,7 +12,7 @@ body {
     height: 100vh;
 }
 
-#gameboard {
+#gameBoard {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
     gap: 20px;
