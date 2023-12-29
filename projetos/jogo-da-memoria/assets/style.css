@@ -14,13 +14,13 @@ body {
 
 #gameBoard {
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
 .card {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     position: relative;
 
     transform-style: preserve-3d;
@@ -54,7 +54,7 @@ body {
     font-size: 40px;
 }
 
-.gameOver {
+#gameOver {
     position: absolute;
     top: 0;
     width: 100%;
