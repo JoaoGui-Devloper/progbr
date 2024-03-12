@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JQuery</title>
+</head>
+<body>
+    
+    <h1>Título H1</h1>
+
+    <h1 class="tit">Outro título</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+       /* let jq = $.noConflict();
+            // Enquanto noConflict, sera trocado $ por jQuery, também é possível colocar let jq = $.noConflict
+            // ou qualquer outro nomer na variavel, trocando $, pelo nome escolhido.
+
+        jq(".tit").hide();
+
+        setTimeout(() => {
+            jq(".tit").show();
+        }, 2000); */
+
+        let titulo = document.querySelectorAll(".tit")
+    
+        titulo.forEach(elemento => {
+            elemento.style.display = "none"
+        });
+
+        setTimeout (() => {
+            titulo.forEach(elemento => {
+            elemento.style.display = "block"
+        });
+        }, 2000);
+        
+        // Diferença do código JavaScript puro e do jQuery.
+
+    </script>
+
+</body>
+</html>
