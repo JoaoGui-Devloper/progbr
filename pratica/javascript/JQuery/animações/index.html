@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações com jQuery</title>
+    <style>
+        .box{
+            height: 500px;
+            width: 500px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="fadein">Fade in</button>
+
+    <div class="box"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        $("#fadein").click(()=>{
+            $(".box").fadeIn(1000);
+        })
+
+        // $("#fadein").click(()=>{
+        //     $(".box").fadeToggle(1000);
+        // })
+
+    </script>
+    
+</body>
+</html>
