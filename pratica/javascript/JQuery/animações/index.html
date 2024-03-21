@@ -6,28 +6,71 @@
     <title>Animações com jQuery</title>
     <style>
         .box{
-            height: 500px;
-            width: 500px;
+            height: 300px;
+            width: 300px;
             background-color: red;
         }
     </style>
 </head>
 <body>
 
-    <button id="fadein">Fade in</button>
+    <button id="button">Fade</button>
+
+    <button id="stop">stop</button>
 
     <div class="box"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
 
-        $("#fadein").click(()=>{
-            $(".box").fadeIn(1000);
+        // $("#button").click(()=>{
+        //     $(".box").fadeIn(1000);          
+        // })
+
+        // Aparece o objeto.
+
+        // $("#button").click(()=>{
+        //     $(".box").fadeOut(1000);         
+        // })
+
+        // Some com o objeto.
+
+//----------------------------------------------------------------------
+
+        // $("#button").click(()=>{
+        //     $(".box").fadeToggle(1000);                    
+        // })
+
+        // Faz o mesmo que o fadeIn e fadeOut, em um botão só.
+
+//----------------------------------------------------------------------
+
+        // $("#button").click(()=>{                 
+        //     $(".box").fadeTo(1000, 0.5);         
+        // })
+
+        // Deixa o objeto com uma porcetagem de cor.
+
+//----------------------------------------------------------------------
+
+        // $("#button").click(()=>{
+        //     $(".box").slideToggle(1000);
+        // })
+
+        // Tem as seguintes opções, slideIn, slideOut e slideToggle. Faz o objeto deslizar na tela
+
+//----------------------------------------------------------------------
+
+        $("#button").click(() => {
+            $(".box").animate({ width: 500, height: 500}, 3000)
         })
 
-        // $("#fadein").click(()=>{
-        //     $(".box").fadeToggle(1000);
-        // })
+        $("#stop").click(() => {
+            $(".box").stop()
+        })
+
+        // Da para criar a propria animacao com o metodo .animate, com o metodo .stop posso 
+        // parar a animacao e voltar de onde parou
 
     </script>
     
